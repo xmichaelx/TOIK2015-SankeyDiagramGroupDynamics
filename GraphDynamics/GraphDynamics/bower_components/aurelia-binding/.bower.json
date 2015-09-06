@@ -1,0 +1,32 @@
+{
+  "name": "aurelia-binding",
+  "version": "0.3.7",
+  "description": "A modern databinding library for JavaScript and HTML.",
+  "license": "MIT",
+  "keywords": [
+    "aurelia",
+    "binding",
+    "databinding"
+  ],
+  "authors": [
+    "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)"
+  ],
+  "homepage": "http://aurelia.io",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/aurelia/binding"
+  },
+  "dependencies": {
+    "aurelia-metadata": "^0.3.0",
+    "aurelia-task-queue": "^0.2.2"
+  },
+  "_release": "0.3.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.7",
+    "commit": "4a8f2683aaab548bac6c78cc7e9a8d6cd5ba1dce"
+  },
+  "_source": "git://github.com/aurelia/binding.git",
+  "_target": "^0.3.2",
+  "_originalSource": "aurelia-binding"
+}

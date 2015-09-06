@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap-slider/bootstrap-slider.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <style>
+        .axis {
+            font: 10px sans-serif;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+            .axis .domain {
+                fill: none;
+                stroke: #000;
+                stroke-opacity: .3;
+                stroke-width: 10px;
+                stroke-linecap: round;
+            }
+
+            .axis .halo {
+                fill: none;
+                stroke: #ddd;
+                stroke-width: 8px;
+                stroke-linecap: round;
+            }
+
+        .slider .handle {
+            fill: #fff;
+            stroke: #000;
+            stroke-opacity: .5;
+            stroke-width: 1.25px;
+            cursor: crosshair;
+        }
+    </style>
+    <style>
+        .node rect {
+            fill-opacity: .9;
+            shape-rendering: crispEdges;
+        }
+
+        .node text {
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        .link {
+            fill: none;
+        }
+
+        .link:hover {
+            stroke-opacity: .5;
+        }
+    </style>
+</head>
+
+<body aurelia-app="app" es5>
+  <div class="splash">
+    <div class="message">Graph Dynamics Visualisation</div>
+    <i class="fa fa-spinner fa-spin"></i>
+  </div>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="scripts/fileSaver.js"></script>
+    <script src="scripts/sankey.js"></script>
+  <script src="scripts/core-js/client/core.js "></script>
+  <script src="scripts/requirejs/require.js" data-main="main"></script>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap-slider.min.js"></script>
+
+</body>
+</html>

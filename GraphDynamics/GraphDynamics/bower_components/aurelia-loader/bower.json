@@ -1,0 +1,24 @@
+{
+  "name": "aurelia-loader",
+  "version": "0.3.5",
+  "description": "An abstract module which specifies an interface for loading modules and view templates.",
+  "keywords": [
+    "aurelia",
+    "loader",
+    "modules"
+  ],
+  "homepage": "http://aurelia.io",
+  "license": "MIT",
+  "authors": [
+    "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/aurelia/loader"
+  },
+  "dependencies": {
+    "aurelia-html-template-element": "^0.1.2",
+    "core-js": "zloirock/core-js",
+    "webcomponentsjs": "webcomponents/webcomponentsjs"
+  }
+}

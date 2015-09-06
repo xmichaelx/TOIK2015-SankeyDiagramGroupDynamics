@@ -1,0 +1,27 @@
+{
+  "name": "aurelia-route-recognizer",
+  "version": "0.2.4",
+  "description": "A lightweight JavaScript library that matches paths against registered routes. It includes support for dynamic and star segments and nested handlers.",
+  "keywords": [
+    "aurelia",
+    "route"
+  ],
+  "homepage": "http://aurelia.io",
+  "license": "MIT",
+  "authors": [
+    "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/aurelia/route-recognizer"
+  },
+  "_release": "0.2.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.4",
+    "commit": "88b31643b9c85b1c673cce23baf4f64a1cb86336"
+  },
+  "_source": "git://github.com/aurelia/route-recognizer.git",
+  "_target": "^0.2.2",
+  "_originalSource": "aurelia-route-recognizer"
+}

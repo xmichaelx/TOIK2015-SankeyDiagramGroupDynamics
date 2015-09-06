@@ -1,0 +1,54 @@
+﻿<template>
+    <section>
+        <input type="file" id="newFiles" multiple style="display:none">
+        <div class="col-xs-12 col-md-6">
+            <h2>Loading data</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="btn btn-default" role="button" click.trigger="loadFile()">Load file</div>
+                </div>
+                <div class="col-xs-12">
+                    <table class="table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Communities count</th>
+                        </tr>
+                        <tr repeat.for="point of loadedData">
+                            <td>${point.t}</td>
+                            <td>${point.communities.length}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <h2>Computing statistics</h2>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="btn btn-default" role="button" click.trigger="compute()">Compute</div>
+                    <div class="btn btn-default" role="button" if.bind="canVisualize" click.trigger="visualize()">Visualise</div>
+                    <div class="btn btn-default" role="button" if.bind="canVisualize" click.trigger="exportFile()">Export</div>
+                </div>
+                <div class="col-xs-12">
+                    <table class="table">
+                        <tr>
+                            <th>Time</th>
+                            <th>Cont</th>
+                            <th>Merge</th>
+                            <th>Split</th>
+                        </tr>
+                        <tr repeat.for="point of flows">
+                            <td>${$index} -> ${$index + 1}</td>
+                            <td>${point.cont.length}</td>
+                            <td>${point.merge.length}</td>
+                            <td>${point.split.length}</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+           
+</section>
+</template>
